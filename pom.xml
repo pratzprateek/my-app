@@ -19,4 +19,20 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
+    <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>my-app</id>
+      <name>my-app-Release</name>
+      <url>http://ec2-54-227-81-255.compute-1.amazonaws.com:8081/repository/my-app-release/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>my-app</id>
+      <name>my-app-Snapshots</name>
+      <url>http://ec2-54-227-81-255.compute-1.amazonaws.com:8081/repository/my-app-SNAPSHOT/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
